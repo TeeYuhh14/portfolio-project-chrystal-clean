@@ -14,7 +14,11 @@ font-family: "Poppins", sans-serif;
   --subheading-font-family: "Poppins", sans-serif;
 }
 
-p {
+body {
+  background-color: var(--primary-color);
+}
+
+h1 {
   font-family: var(--heading-font-family);
   font-weight: normal;
   font-size: 45px;
@@ -23,20 +27,36 @@ p {
   color: #272142;
 }
 
+h2 {
+  font-family: var(--heading-font-family);
+  font-size: 35px;
+  font-weight: bold;
+}
+h3 {
+  font-family: var(--subheading-font-family);
+  font-size: 17px;
+  font-style: italic;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
 .summary {
-  background: var(--primary-color);
   text-align: center;
   padding: 160px 20px;
 }
 
-.summary h1 {
+.summary h2 {
   font-family: var(--subheading-font-family);
   font-size: 27px;
   font-weight: 400;
   line-height: 2;
 }
 
-.summary h2 {
+.summary h3 {
   font-family: var(--subheading-font-family);
   font-size: 17px;
   font-style: italic;
@@ -50,4 +70,40 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+}
+
+.btn-branding-outline {
+  background-color: var(--branding-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.project-description {
+  padding: 60px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .summary {
+    padding: 80px 10px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
